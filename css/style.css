@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #67AEFC;
+  min-height: 95px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+}
+.header__btn {
+  width: 170px;
+  height: 38px;
+  padding: 10px 42px;
+  align-items: center;
+  background-color: #75E169;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.logo {
+  width: 242px;
+  height: 59px;
+  margin-right: 307px;
+}
+
+.menu {
+  margin-right: 30px;
+}
+.menu__list {
+  width: 420px;
+  padding: 0;
+}
+.menu__item {
+  display: inline-block;
+  margin-right: 32px;
+}
+.menu__item-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.menu__item:last-of-type {
+  margin-right: 0;
+}

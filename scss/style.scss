@@ -26,6 +26,14 @@ a{
     margin: 0 auto;
 }
 
+.title{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: #111111;
+}
+
 .header{
     background-color: #67AEFC;
     min-height: 95px;
@@ -40,13 +48,22 @@ a{
         padding: 10px 42px;
         align-items: center;
         background-color: #75E169;
-        border: none;
+        border: 2px solid #75E169;
         border-radius: 5px;
         font-weight: 700;
         font-size: 15px;
         line-height: 15px;
         text-transform: uppercase;
         color: #fff;
+        &:hover{
+            transition: all .5s;
+            border: 2px solid #fff;
+        }
+        &:active{
+            background-color: #fff;
+            border: 2px solid #fff;
+            color: #67AEFC;
+        }
     }
 }
 
@@ -77,4 +94,54 @@ a{
 }
 .menu__item:last-of-type{
             margin-right: 0;
+}
+
+.first__screen{
+    margin-top: 82px;
+    margin-bottom: 41px;
+    background-image: url(../images/first-screen-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1920px;
+    height: 643px;
+    &-inner--title{
+        padding-top: 89px;
+        padding-bottom: 20px;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 125%;
+        color: #484848; 
+        max-width: 838px;
+    }
+    &-inner--text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 432px;
+        padding-bottom: 58px;
+    }
+    &-btn{
+        max-width: 270px;
+        width: 100%;
+        height: 60px;
+        background: #75E169;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 2px solid #75E169;
+        padding: 23px 92px;
+        &:hover{
+            border-color: #67AEFC;
+            transition: all .5s;
+        }
+        &:active{
+            border-color: #67AEFC;
+            background-color: #67AEFC;
+            color: #fff;
+        }
+    }
 }

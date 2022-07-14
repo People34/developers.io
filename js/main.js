@@ -1,19 +1,11 @@
 $(function () {
-    $('.case__slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+    $('.develops__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
         arrow: true,
-        prevArrow: '<img class="slider__arrow slider__arrow-left" src="img/prevArrow.png"></img>',
-        nextArrow: '<img class="slider__arrow slider__arrow-right" src="img/nextArrow.png"></img>',
+        prevArrow: '<img class="slider__arrow slider__arrow-left" src="images/prevArrow.png"></img>',
+        nextArrow: '<img class="slider__arrow slider__arrow-right" src="images/nextArrow.png"></img>',
     });
-
-
-    $('.materials__slider').slick({
-        arrows: false, 
-        dots: true,   
-    })
-
 
 
 });

@@ -39,6 +39,15 @@ input:focus {
   border: 2px solid #67AEFC;
 }
 
+ul {
+  padding: 0;
+}
+
+footer {
+  background-color: #64ABF9;
+  color: #fff;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -774,4 +783,37 @@ input:focus {
   position: absolute;
   top: 289px;
   right: 405px;
+}
+
+.footer__inner {
+  padding-top: 101px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__inner-contact {
+  position: relative;
+  margin-right: 107px;
+  margin-left: 124px;
+}
+
+.logo__footer {
+  margin-bottom: 45px;
+}
+
+.social__list {
+  display: inline-block;
+  margin-right: 38px;
+  padding-bottom: 121px;
+}
+
+.contact-img {
+  position: absolute;
+  left: -25px;
+  width: 22px;
+  height: 23px;
+  margin-bottom: 13px;
+}
+
+.footer__copy {
+  text-align: center;
 }

@@ -39,6 +39,14 @@ input{
     }
 }
 
+ul{
+    padding: 0;
+}
+
+footer{
+    background-color: #64ABF9;
+    color: #fff;
+}
 
 .container{
     max-width: 1170px;
@@ -781,3 +789,38 @@ input{
     }
 }
 
+.footer__inner{
+    padding-top: 101px;
+    display: flex;
+    justify-content: space-between;
+    &-social{
+        
+    }
+    &-contact{
+        position: relative;
+        margin-right: 107px;
+        margin-left: 124px;
+    }
+}
+
+.logo__footer{
+    margin-bottom: 45px;
+}
+
+.social__list{
+    display: inline-block;
+    margin-right: 38px;
+    padding-bottom: 121px;
+}
+
+.contact-img{
+    position: absolute;
+    left: -25px;
+    width: 22px;
+    height: 23px;
+    margin-bottom: 13px;
+}
+
+.footer__copy{
+    text-align: center;
+}

@@ -578,11 +578,23 @@ footer{
     bottom: -36%;
     left: 33vw;
     margin-right: 30px;
+    border: 2px solid #67AEFC;
+    border-radius: 15px;
+    padding: 18px 27px 18px 21px;
+    &:active{
+        background: #67AEFC;
+    }
 }
+
+.slider__arrow:active path .stroke{
+    color: #fff;
+}
+
 
 .slider__arrow-right{
     position: absolute;
     left: 38vw;
+    padding: 18px 22px 18px 26px;
 }
 
 .slick-initialized .slick-slide{

@@ -21,6 +21,25 @@ a{
     text-decoration: none;
 }
 
+form{
+    display: grid;
+    justify-items: center;
+}
+
+input{
+    width: 470px;
+    height: 58px;
+    background-color: #fff;
+    border: 1px solid #6EB1FB;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    &:focus{
+        border: 2px solid #67AEFC;
+    }
+}
+
+
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -699,3 +718,66 @@ a{
     bottom: 245px;
     right: 123px;
 }
+
+
+.info{
+    position: relative;
+    &__inner{
+    margin-top: 216px;
+    display: flex;
+    padding-bottom: 180px;
+    &-title{
+        padding-bottom: 53px;
+        width: 631px;
+    }
+    &-text{
+        width: 670px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #111111;
+        padding-bottom: 45px;
+    }
+    }
+    &-buble{
+        position: absolute;
+        width: 59px;
+        height: 58px;
+        top: -60px;
+        left: 153px;
+    }
+    &__btn{
+        padding: 22px 54px;
+    }
+}
+
+.talk{
+    background-color: #DAECFF;
+    position: relative;
+    &__inner{
+        padding-top: 179px;
+        padding-bottom: 128px;
+        &-title{
+            margin-bottom: 20px;
+        }
+        &-text{
+            width: 479px;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 27px;
+            line-height: 175%;
+            color: #111;
+        }
+    }
+    &-phone{
+        position: absolute;
+        bottom: 174px;
+        left: 232px;
+    }
+    &-img{
+        position: absolute;
+        top: 289px;
+        right: 405px;
+    }
+}
+

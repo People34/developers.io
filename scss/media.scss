@@ -1,3 +1,9 @@
+@media (max-width: 1730px) {
+    .second__screen-img{
+        display: none;
+    }
+}
+
 @media (max-width: 1200px) {
     .logo{
         margin-right: 150px;
@@ -97,6 +103,14 @@
             }
         }
     }
+
+    .second__screen{
+        margin-top: -40px;
+        &-inner{
+        padding-top: 16px; 
+        padding-bottom: 17px;
+        }
+    }
 }
 
 @media (max-width: 550px){
@@ -112,6 +126,25 @@
             padding-top: 270px; 
             
         }
+    }
+
+    .second__screen{
+        margin-top: 404px;
+        &-inner{
+        padding-top: 16px; 
+        padding-bottom: 17px;
+        }
+    }
+
+    .accordion{
+        padding-bottom: 30px;
+    }
+
+
+    .accordion__title{
+        font-size: 17px;
+        line-height: 175%;
+        width: 233px;
     }
 }
 
@@ -132,6 +165,13 @@
         }
         &-btn{
             max-width: 360px;
+        }
+    }
+    .second__screen{
+        margin-top: 384px;
+        &-inner{
+        padding-top: 16px; 
+        padding-bottom: 17px;
         }
     }
 }

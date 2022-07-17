@@ -19,6 +19,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 form {
@@ -27,7 +28,8 @@ form {
 }
 
 input {
-  width: 470px;
+  max-width: 470px;
+  width: 100%;
   height: 58px;
   background-color: #fff;
   border: 1px solid #6EB1FB;
@@ -128,7 +130,8 @@ footer {
 
 .hamburger {
   display: none;
-  position: fixed;
+  margin-left: 158px;
+  margin-bottom: 16px;
   z-index: 100;
   top: 15px;
   right: 20px;
@@ -824,7 +827,8 @@ footer {
   margin-bottom: 20px;
 }
 .talk__inner-text {
-  width: 479px;
+  max-width: 479px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 27px;
@@ -842,13 +846,16 @@ footer {
   right: 405px;
 }
 
+.mobile-img {
+  display: none;
+}
+
 .footer__inner {
   padding-top: 101px;
   display: flex;
   justify-content: space-between;
 }
 .footer__inner-contact {
-  position: relative;
   margin-right: 107px;
   margin-left: 124px;
 }
@@ -863,12 +870,17 @@ footer {
   padding-bottom: 121px;
 }
 
+.contact-link {
+  position: relative;
+  margin-left: 10px;
+}
+
 .contact-img {
   position: absolute;
-  left: -25px;
   width: 22px;
   height: 23px;
   margin-bottom: 13px;
+  left: -30px;
 }
 
 .footer__copy {
@@ -894,6 +906,10 @@ footer {
   .example {
     margin-top: 170px;
   }
+
+  .talk-img {
+    display: none;
+  }
 }
 @media (max-width: 1560px) {
   .info-img {
@@ -902,6 +918,10 @@ footer {
 }
 @media (max-width: 1490px) {
   .example-top__img {
+    display: none;
+  }
+
+  .talk-phone {
     display: none;
   }
 }
@@ -919,6 +939,11 @@ footer {
     margin-top: 100px;
   }
 }
+@media (max-width: 1250px) {
+  .footer__inner {
+    justify-content: space-evenly;
+  }
+}
 @media (max-width: 1230px) {
   .info__inner {
     margin-top: 45px;
@@ -929,6 +954,11 @@ footer {
   }
   .info-buble {
     display: none;
+  }
+
+  .talk__inner {
+    padding-top: 85px;
+    padding-bottom: 42px;
   }
 }
 @media (max-width: 1200px) {
@@ -987,6 +1017,23 @@ footer {
   .info-img__content {
     display: block;
   }
+
+  .mobile-img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+
+  .footer__inner {
+    padding-top: 45px;
+  }
+  .footer__inner-contact {
+    margin: 0 auto;
+  }
+
+  .social__list {
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 930px) {
   .slider__img {
@@ -1025,6 +1072,10 @@ footer {
   .galery__title {
     padding-top: 185px;
   }
+
+  .talk__inner {
+    padding-top: 42px;
+  }
 }
 @media (max-width: 785px) {
   .slider__container {
@@ -1042,8 +1093,9 @@ footer {
 
   .slider__text {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
+    font-size: 17px;
+    line-height: 175%;
+    text-align: left;
   }
 
   .example {
@@ -1054,6 +1106,20 @@ footer {
     width: 350px;
     height: 250px;
     margin: 0 auto;
+  }
+
+  .footer__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .social {
+    margin-top: -25px;
+    margin-bottom: -45px;
+  }
+
+  .footer__copy {
+    margin-top: 15px;
   }
 }
 @media (max-width: 750px) {
@@ -1194,12 +1260,16 @@ footer {
     display: block;
     height: 100%;
     text-align: center;
-    align-content: center;
+    margin: 0 20px;
+    height: 615px;
   }
 
   .slider__img {
+    max-width: 220px;
     width: 100%;
+    height: 230px;
     margin-left: 83px;
+    align-items: center;
   }
 
   .example-item {
@@ -1221,22 +1291,26 @@ footer {
 }
 @media (max-width: 400px) {
   .first__screen {
-    margin-top: 28px;
     background-image: url(../images/first-screen-bg-tel.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     max-width: 524px;
     height: 330px;
+    margin: 0;
   }
   .first__screen-inner {
+    text-align: center;
     padding-top: 275px;
   }
+  .first__screen-inner--title {
+    padding-top: 50px;
+  }
   .first__screen-inner--text {
-    padding-bottom: 20px;
+    padding-bottom: 34px;
   }
   .first__screen-btn {
-    max-width: 360px;
+    max-width: 335px;
   }
 
   .second__screen {
@@ -1245,6 +1319,27 @@ footer {
   .second__screen-inner {
     padding-top: 16px;
     padding-bottom: 17px;
+  }
+  .second__screen-title {
+    font-size: 23px;
+    line-height: 150%;
+  }
+  .second__screen .content p {
+    padding-left: 57px;
+  }
+  .second__screen .develops__title {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 150%;
+    padding-bottom: 30px;
+  }
+
+  .slider__title {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: left;
+    text-transform: uppercase;
   }
 
   .slider__img {
@@ -1271,5 +1366,9 @@ footer {
     width: 260px;
     height: 182px;
     margin: 0 auto;
+  }
+
+  .social__list {
+    margin-right: 15px;
   }
 }

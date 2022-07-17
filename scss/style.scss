@@ -19,6 +19,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 form{
@@ -27,7 +28,8 @@ form{
 }
 
 input{
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     height: 58px;
     background-color: #fff;
     border: 1px solid #6EB1FB;
@@ -128,7 +130,8 @@ footer{
 
 .hamburger {
     display: none;
-    position: fixed;
+    margin-left: 158px;
+    margin-bottom: 16px;
     z-index: 100;
     top: 15px;
     right: 20px;
@@ -826,7 +829,8 @@ footer{
             margin-bottom: 20px;
         }
         &-text{
-            width: 479px;
+            max-width: 479px;
+            width: 100%;
             text-align: center;
             margin: 0 auto;
             padding-bottom: 27px;
@@ -846,6 +850,10 @@ footer{
     }
 }
 
+.mobile-img{
+    display: none;
+}
+
 .footer__inner{
     padding-top: 101px;
     display: flex;
@@ -854,7 +862,6 @@ footer{
         
     }
     &-contact{
-        position: relative;
         margin-right: 107px;
         margin-left: 124px;
     }
@@ -870,12 +877,17 @@ footer{
     padding-bottom: 121px;
 }
 
+.contact-link{
+    position: relative;
+    margin-left: 10px;
+}
+
 .contact-img{
     position: absolute;
-    left: -25px;
     width: 22px;
     height: 23px;
     margin-bottom: 13px;
+    left: -30px;
 }
 
 .footer__copy{

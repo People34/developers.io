@@ -49,10 +49,10 @@ footer{
 }
 
 .container{
-    max-width: 1190px;
+    max-width: 1210px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .title{
@@ -605,16 +605,17 @@ footer{
     padding: 0 auto;
 }
 
-.slick-list{
+.develops .slick-list{
     position: relative;
     margin-bottom: 82px;
 }
 
+
+.container__arrow{
+    text-align: center;
+}
+
 .slider__arrow{
-    display: inline;
-    position: absolute;
-    bottom: -36%;
-    left: 31vw;
     margin-right: 30px;
     background: transparent;
     border: 2px solid #67AEFC;
@@ -622,21 +623,17 @@ footer{
     padding: 18px 27px 18px 21px;
     &:hover{
         background: #67AEFC;
+        & path .stroke{
+    color: #fff;
+}
     }
 }
 
-.slider__arrow:active path .stroke{
-    color: #fff;
-}
-
-
 .slider__arrow-right{
-    position: absolute;
-    left: 38vw;
     padding: 18px 22px 18px 26px;
 }
 
-.slick-initialized .slick-slide{
+.develops__slider-item.slick-slide{
     display: flex;
     justify-content: space-between;
     max-width: 672px;
@@ -690,10 +687,10 @@ footer{
     }
     &__galery{
         margin-top: 51px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-gap: 37px 31px;
         padding-bottom: 121px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -710,7 +707,6 @@ footer{
     max-width: 563px;
     height: 447px;
     border-radius: 15px;
-    gap: 31px;
     &:hover{
         background-image: none;
         background-color: #67AEFC;
@@ -778,6 +774,10 @@ footer{
     right: 123px;
 }
 
+.arrow-container{
+    text-align: center;
+}
+
 
 .info{
     position: relative;
@@ -787,10 +787,10 @@ footer{
     padding-bottom: 180px;
     &-title{
         padding-bottom: 53px;
-        width: 631px;
+        max-width: 631px;
     }
     &-text{
-        width: 670px;
+        max-width: 670px;
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
@@ -807,6 +807,12 @@ footer{
     }
     &__btn{
         padding: 22px 54px;
+    }
+    &-img{
+        max-width: 670px;
+        &__content{
+            display: none;
+        }
     }
 }
 
